@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".PollingUnitsAround">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pua_heading"
+        android:id="@+id/headerText"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/small"
+        android:background="@drawable/tinted_e"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pua"
+        android:layout_below="@+id/headerText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadingImage"
+        android:src="@drawable/voter"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/loadingImage"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loading"
+        android:id="@+id/loadingText"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/progressBar"
+        android:textSize="@dimen/text_size_sp"
+        android:textColor="#ff555555" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quanteqLogo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/quanteq_logo"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

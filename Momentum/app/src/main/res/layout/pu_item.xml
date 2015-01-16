@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/abc_action_bar_title_text_size">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/puid"
+        android:layout_alignParentRight="false"
+        android:paddingTop="@dimen/small"
+        android:paddingRight="@dimen/small"
+        android:paddingBottom="@dimen/small"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/pudetails"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/puid"
+        android:paddingTop="@dimen/small"
+        android:paddingLeft="@dimen/small"
+        android:paddingBottom="@dimen/small"
+        android:paddingRight="@dimen/small"
+        android:textSize="@dimen/text_size_sp"
+        android:textColor="#ff555555" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/distance"
+        android:paddingTop="@dimen/small"
+        android:paddingLeft="@dimen/small"
+        android:paddingBottom="@dimen/small"
+        android:paddingRight="@dimen/small"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
